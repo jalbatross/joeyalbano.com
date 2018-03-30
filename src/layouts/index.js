@@ -61,8 +61,8 @@ const TemplateWrapper = ({ children }) => (
               </div>
 <div style={{ flex: 1 }}>
                 <Sidebar
-                  title="Codestack"
-                  description="Articles on React and Node.js. All articles are written by Me. Fullstack Web Development."
+                  title="Flight of the Albatross"
+                  description="Programming...and stuff"
                 />
                 <Sidebar
                   title="About author"
