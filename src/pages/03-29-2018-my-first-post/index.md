@@ -16,3 +16,4 @@ I actually spent two hours trying to get the tags to be separated by commas.
 The solution was to put a toString() at the end of the markdown object that returned the array of tags!
 
 T_T
+
