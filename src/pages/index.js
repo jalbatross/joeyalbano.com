@@ -15,7 +15,7 @@ export default function Index({ data }) {
                 <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
               </h1>
               <h2>{post.frontmatter.date}</h2>
-              <h2><a href="/tags">Tags</a>: {post.frontmatter.tags.toString()}</h2>
+              <h5><Link to="/tags">Tags</Link>: {post.frontmatter.tags.toString()}</h5>
               <p>{post.excerpt}</p>
             </div>
           );
