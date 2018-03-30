@@ -10,6 +10,8 @@ export default function Template({
      <Helmet title={`SodeCtack - ${post.frontmatter.title}`} />
       <div className="blog-post">
         <h1>{post.frontmatter.title}</h1>
+        <h2>{post.frontmatter.date}</h2>
+        <h2>Tags: {post.frontmatter.tags.toString()}</h2>
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -27,6 +29,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        tags
       }
     }
   }
