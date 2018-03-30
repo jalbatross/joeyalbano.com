@@ -23,7 +23,7 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          CodeStack
+          Jlife
         </Link>
       </h1>
     </div>
