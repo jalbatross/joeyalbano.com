@@ -9,13 +9,16 @@ export default function Index({ data }) {
       {posts
         .filter(post => post.node.frontmatter.title.length > 0)
         .map(({ node: post }) => {
+
+        {/* Generate code for tags */}
+        const tags = post.frontmatter.tags.map((tag) => "<a href=/tags/" + tag + ">" + tag + "</a> ");
           return (
             <div className="blog-post-preview" key={post.id}>
               <h1>
                 <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
               </h1>
               <h2>{post.frontmatter.date}</h2>
-              <h5><Link to="/tags">Tags</Link>: {post.frontmatter.tags.toString()}</h5>
+              <h5><Link to="/tags">Tags</Link>:  <div dangerouslySetInnerHTML = {{__html: tags}} /></h5>
               <p>{post.excerpt}</p>
             </div>
           );

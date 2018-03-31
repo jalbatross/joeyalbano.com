@@ -11,7 +11,7 @@ import "../styles/layout-override.css";
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Flight of the Albatross"
+      title="Jlife"
       meta={[
         { name: "description", content: "Sample" },
         { name: "keywords", content: "sample, something" }
