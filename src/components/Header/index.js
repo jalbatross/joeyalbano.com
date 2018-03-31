@@ -26,7 +26,6 @@ const Header = () => (
           Jlife
         </Link>
       </h1>
-
     </div>
   </div>
 );

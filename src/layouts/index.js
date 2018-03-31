@@ -11,7 +11,7 @@ import "../styles/layout-override.css";
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Flight of the Albatross"
       meta={[
         { name: "description", content: "Sample" },
         { name: "keywords", content: "sample, something" }
@@ -67,6 +67,10 @@ const TemplateWrapper = ({ children }) => (
                 <Sidebar
                   title="About author"
                   description="I am Joey!"
+                />
+                <Sidebar
+                  title="another title"
+                  description="stuff goes here!"
                 />
               </div>
             </div>
