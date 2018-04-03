@@ -33,11 +33,11 @@ Here's my solution for DCP18. The assignment was as follows:
            //put them in hash map
             for (int j = i; j < i + k; j++) {
                 if (myMap.containsKey(arr.get(j)) ) {
-                    myMap.get(arr.get(j)).add(arr.get(j));
+                    myMap.get(arr.get(j)).push(arr.get(j));
                 }
                 else {
                     Stack<Integer> newStack = new Stack<Integer>();
-                    newStack.add(arr.get(j));
+                    newStack.push(arr.get(j));
                     myMap.put(arr.get(j), newStack);
                 }
             }
