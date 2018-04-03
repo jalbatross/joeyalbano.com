@@ -23,7 +23,7 @@ Here's my solution for DCP18. The assignment was as follows:
 >8 = max(7, 8, 7)
 >Do this in O(n) time and O(k) space. You can modify the input array in-place and you do not need to store the results. You can simply print them out as you compute them.
 
-<pre><code>
+```java
     public static void printMaxSubarrayVals(ArrayList<Integer> arr, int k) {
         HashMap<Integer, Stack<Integer>> myMap = new HashMap<Integer, Stack<Integer>>();
         
@@ -57,7 +57,7 @@ Here's my solution for DCP18. The assignment was as follows:
         System.out.println("done");
      }
     
- </code></pre>
+```
 
 After viewing this page, there are a few things that I need to take care of with the blog:
 

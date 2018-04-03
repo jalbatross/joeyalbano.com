@@ -1,5 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
+import '../styles/blog-post-code-formatting.css'
 
 export default function Template({
   data 

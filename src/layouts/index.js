@@ -8,6 +8,8 @@ import Media from 'react-media'
 import './index.css'
 import "../styles/layout-override.css";
 
+require("prismjs/themes/prism-tomorrow.css");
+
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
