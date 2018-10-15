@@ -6,6 +6,7 @@ export default function Template({
   data 
 }) {
   const post = data.markdownRemark; 
+  console.log(post.frontmatter);
   return (
     <div className="blog-post-container">
      <Helmet title={`Jlife - ${post.frontmatter.title}`} />

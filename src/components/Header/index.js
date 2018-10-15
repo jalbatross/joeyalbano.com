@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import HeaderLink from './HeaderLink'
 
 const Header = () => (
   <div
@@ -12,19 +12,17 @@ const Header = () => (
     <div
       style={{
         margin: '0 auto',
-        maxWidth: 980,
+        maxWidth: '500px',
+        height: '18px',
         padding: '1.45rem 1.0875rem',
+        border: '1px solid black'
       }}
    >
-     <h1 style={{margin: 0, textAlign: 'center',fontSize: '18px'}}>
-        <Link to="/"
-          style={{
-            color: 'black',
-            textDecoration: 'none',
-          }}
-        >
-          Jlife
-        </Link>
+     <h1 style={{ textAlign: 'center',fontSize: '18px'}}>
+      <HeaderLink linkLocation="/About" title="About" style={{borderRight: "1px solid black"}}/>
+      <HeaderLink linkLocation="/Blog" title="Blog" style={{borderRight: "1px solid black", borderLeft: "1px solid black"}}/>
+      <HeaderLink linkLocation="/Portfolio" title="Portfolio" style={{borderRight: "1px solid black", borderLeft: "1px solid black"}}/>
+      <HeaderLink linkLocation="/Resume" title="Resume" style={{borderLeft: "1px solid black"}} />
       </h1>
     </div>
   </div>

@@ -13,7 +13,7 @@ require("prismjs/themes/prism-tomorrow.css");
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Jlife"
+      title="Jlife Blog"
       meta={[
         { name: "description", content: "Sample" },
         { name: "keywords", content: "sample, something" }
@@ -71,8 +71,8 @@ const TemplateWrapper = ({ children }) => (
                   description="I am Joey!"
                 />
                 <Sidebar
-                  title="another title"
-                  description="stuff goes here!"
+                  title="Contact & Social Media"
+                  description="gmailIcon; fbIcon; igIcon; soundCloudIcon;linkedInIcon; gitHubIcon"
                 />
               </div>
             </div>
