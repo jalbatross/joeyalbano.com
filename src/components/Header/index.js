@@ -19,7 +19,7 @@ const Header = () => (
       }}
    >
      <h1 style={{ textAlign: 'center',fontSize: '18px'}}>
-      <HeaderLink linkLocation="/about" title="About" style={{borderRight: "1px solid black"}}/>
+      <HeaderLink linkLocation="/" title="About" style={{borderRight: "1px solid black"}}/>
       <HeaderLink linkLocation="/blog" title="Blog" style={{borderRight: "1px solid black", borderLeft: "1px solid black"}}/>
       <HeaderLink linkLocation="/portfolio" title="Portfolio" style={{borderRight: "1px solid black", borderLeft: "1px solid black"}}/>
       <HeaderLink linkLocation="/resume" title="Resume" style={{borderLeft: "1px solid black"}} />
