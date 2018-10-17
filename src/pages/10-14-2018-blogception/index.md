@@ -159,10 +159,10 @@ const Header = () => (
       }}
    >
      <h1 style={{margin: 0, textAlign: 'center',fontSize: '18px'}}>
-        <HeaderLink linkLocation="/About" title="About"/>
-        <HeaderLink linkLocation="/Blog" title="Blog"/>
-        <HeaderLink linkLocation="/Portfolio" title="Portfolio"/>
-        <HeaderLink linkLocation="/Resume" title="Resume"/>
+        <HeaderLink linkLocation="/about" title="About"/>
+        <HeaderLink linkLocation="/blog" title="Blog"/>
+        <HeaderLink linkLocation="/portfolio" title="Portfolio"/>
+        <HeaderLink linkLocation="/resume" title="Resume"/>
       </h1>
     </div>
   </div>
@@ -229,10 +229,10 @@ const HeaderLink = (props) => {
 }
 
 //Changes to each HeaderLink component
-    <HeaderLink linkLocation="/About" title="About" style={{borderRight: "1px solid black"}}/>
-    <HeaderLink linkLocation="/Blog" title="Blog" style={{borderRight: "1px solid black", borderLeft: "1px solid black"}}/>
-    <HeaderLink linkLocation="/Portfolio" title="Portfolio" style={{borderRight: "1px solid black", borderLeft: "1px solid black"}}/>
-    <HeaderLink linkLocation="/Resume" title="Resume" style={{borderLeft: "1px solid black"}} />
+    <HeaderLink linkLocation="/about" title="About" style={{borderRight: "1px solid black"}}/>
+    <HeaderLink linkLocation="/blog" title="Blog" style={{borderRight: "1px solid black", borderLeft: "1px solid black"}}/>
+    <HeaderLink linkLocation="/portfolio" title="Portfolio" style={{borderRight: "1px solid black", borderLeft: "1px solid black"}}/>
+    <HeaderLink linkLocation="/resume" title="Resume" style={{borderLeft: "1px solid black"}} />
 ```
 ![](smashed-header-text-3.png)
 
@@ -263,10 +263,10 @@ const Header = () => (
       }}
    >
      <h1 style={{ textAlign: 'center',fontSize: '18px'}}>
-      <HeaderLink linkLocation="/About" title="About" style={{borderRight: "1px solid black"}}/>
-      <HeaderLink linkLocation="/Blog" title="Blog" style={{borderRight: "1px solid black", borderLeft: "1px solid black"}}/>
-      <HeaderLink linkLocation="/Portfolio" title="Portfolio" style={{borderRight: "1px solid black", borderLeft: "1px solid black"}}/>
-      <HeaderLink linkLocation="/Resume" title="Resume" style={{borderLeft: "1px solid black"}} />
+      <HeaderLink linkLocation="/about" title="About" style={{borderRight: "1px solid black"}}/>
+      <HeaderLink linkLocation="/blog" title="Blog" style={{borderRight: "1px solid black", borderLeft: "1px solid black"}}/>
+      <HeaderLink linkLocation="/portfolio" title="Portfolio" style={{borderRight: "1px solid black", borderLeft: "1px solid black"}}/>
+      <HeaderLink linkLocation="/resume" title="Resume" style={{borderLeft: "1px solid black"}} />
       </h1>
     </div>
   </div>

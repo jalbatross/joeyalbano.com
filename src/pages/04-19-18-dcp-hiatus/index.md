@@ -2,7 +2,7 @@
 path: "/dcp-hiatus"
 date: "2018-04-19"
 title: "DCP Hiatus"
-tags: ["programming, life"]
+tags: ["programming", "life"]
 published: "true"
 ---
 I know I promised a tutorial for Gatsby Remark PrismJS, but that will have to go by the wayside for now.

@@ -2,7 +2,7 @@
 path: "/serving-a-cors"
 date: "2018-07-11"
 title: "Serving a CORS"
-tags: ["programming, life","servers","CORS"]
+tags: ["programming", "life","servers","CORS"]
 published: "true"
 ---
 I know I promised a tutorial for Gatsby Remark PrismJS, but that will have to go by the wayside for now.

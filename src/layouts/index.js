@@ -61,20 +61,6 @@ const TemplateWrapper = ({ children }) => (
               <div style={{ flex: 2.5, paddingRight: "30px" }}>
                 {children()}
               </div>
-<div style={{ flex: 1 }}>
-                <Sidebar
-                  title="Flight of the Albatross"
-                  description="Programming...and stuff"
-                />
-                <Sidebar
-                  title="About author"
-                  description="I am Joey!"
-                />
-                <Sidebar
-                  title="Contact & Social Media"
-                  description="gmailIcon; fbIcon; igIcon; soundCloudIcon;linkedInIcon; gitHubIcon"
-                />
-              </div>
             </div>
           )
         }

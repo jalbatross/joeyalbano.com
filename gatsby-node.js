@@ -6,11 +6,13 @@
 
  // You can delete this file if you're not using it
 const _ = require('lodash')
- const path = require('path');
+const path = require('path');
+
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
-const blogPostTemplate = path.resolve(`src/templates/blog-post.js`);
-const tagTemplate = path.resolve("src/templates/tags.js");
+  const blogPostTemplate = path.resolve(`src/templates/blog-post.js`);
+  const tagTemplate = path.resolve("src/templates/tags.js");
+
 return graphql(`{
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
@@ -58,13 +60,13 @@ return graphql(`{
       // Eliminate duplicate tags
       tags = _.uniq(tags);
 
-          // Make tag pages
-    tags.forEach(tag => {
-      createPage({
-        path: `/tags/${_.kebabCase(tag)}/`,
-        component: tagTemplate,
-        context: {
-          tag,
+      // Make tag pages
+      tags.forEach(tag => {
+        createPage({
+          path: `/tags/${_.kebabCase(tag)}/`,
+          component: tagTemplate,
+          context: {
+            tag,
         },
       });
     });

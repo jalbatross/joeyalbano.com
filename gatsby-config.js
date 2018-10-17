@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Joey Albano',
   },
   plugins: ['gatsby-plugin-react-helmet',
             'gatsby-plugin-catch-links',
