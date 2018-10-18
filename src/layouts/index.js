@@ -37,9 +37,9 @@ const TemplateWrapper = ({ children }) => (
             <div
               style={{
                 margin: "0 auto",
-                maxWidth: 980,
-                display: "flex",
-                flexDirection: "row",
+                maxWidth: 900,
+                display:'flex',
+                flexDirection:'column',
                 justifyContent: "space-between",
                 height: "100%",
                 padding: "25px"
@@ -51,9 +51,9 @@ const TemplateWrapper = ({ children }) => (
             <div
               style={{
                 margin: "0 auto",
-                maxWidth: 980,
-                display: "flex",
-                flexDirection: "row",
+                maxWidth: 900,
+                display:'flex',
+                flexDirection:'column',
                 justifyContent: "space-between",
                 height: "100%",
                 padding: "25px"

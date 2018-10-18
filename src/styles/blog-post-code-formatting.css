@@ -27,9 +27,10 @@
 .gatsby-highlight pre[class*="language-"] {
   margin: 0;
   padding: 0;
-  overflow: initial;
+  overflow: auto;
   float: left; /* 1 */
   min-width: 100%; /* 2 */
+  line-height:1;
 }
 
 /*Needed to avoid highlighting errors when changing PrismJS style*/
