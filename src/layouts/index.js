@@ -13,10 +13,11 @@ require("prismjs/themes/prism-tomorrow.css");
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Jlife Blog"
+      title="Joey Albano"
       meta={[
-        { name: "description", content: "Sample" },
-        { name: "keywords", content: "sample, something" }
+        { name: "description", content: "Joey Albano's Webpage" },
+        { name: "keywords", content: "Joey Albano, HTML, React, Javascript, Programming" },
+        { name: 'author', content: 'Joey Albano'},
       ]}
     />
     <Header />
