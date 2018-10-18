@@ -1,6 +1,8 @@
 # joeyalbano.com
 My website!
 
+You can see it at https://joeyalbano.com
+
 ## Install
 
 Make sure that you have the Gatsby CLI program installed:
