@@ -18,16 +18,15 @@ const TemplateWrapper = ({ children }) => (
         { name: "description", content: "Joey Albano's Webpage" },
         { name: "keywords", content: "Joey Albano, HTML, React, Javascript, Programming" },
         { name: 'author', content: 'Joey Albano'},
+        {name:  'viewport', content: 'width=device-width, initial-scale=1.0'}
       ]}
     />
     <Header />
     <div
       style={{
-        margin: "0 auto",
-        maxWidth: 980,
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "space-between",
+        maxWidth: '980px',
+        margin: '0 auto',
+        display: "block",
         height: "100%"
       }}
     >
@@ -37,29 +36,25 @@ const TemplateWrapper = ({ children }) => (
             <div
               style={{
                 margin: "0 auto",
-                maxWidth: 900,
-                display:'flex',
-                flexDirection:'column',
-                justifyContent: "space-between",
+                maxWidth: '900px',
+                display:'block',
                 height: "100%",
                 padding: "25px"
               }}
             >
-              <div style={{ flex: 1 }}>{children()}</div>
+              <div style={{ display: 'block'}}>{children()}</div>
             </div>
           ) : (
             <div
               style={{
                 margin: "0 auto",
-                maxWidth: 900,
-                display:'flex',
-                flexDirection:'column',
-                justifyContent: "space-between",
+                maxWidth: '900px',
+                display:'block',
                 height: "100%",
                 padding: "25px"
               }}
             >
-              <div style={{ flex: 2.5, paddingRight: "30px" }}>
+              <div style={{ display:'block' }}>
                 {children()}
               </div>
             </div>

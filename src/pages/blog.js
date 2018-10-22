@@ -11,7 +11,7 @@ export default function Blog({ data }) {
         .map(({ node: post }) => {
 
         {/* Generate code for tags */}
-        const tags = post.frontmatter.tags.map((tag, ind, arr) => <a href={`/tags/${tag}`}>{tag}{ind === arr.length - 1 ? null : ', '}</a>);
+        const tags = post.frontmatter.tags.map((tag, ind, arr) => <a href={`/tags/${tag}`} key={tag}>{tag}{ind === arr.length - 1 ? null : ', '}</a>);
         const subtitle = post.frontmatter.subtitle ? <h2>{post.frontmatter.subtitle}</h2> : null;
           return (
             <div className="blog-post-preview" key={post.id}>
