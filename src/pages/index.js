@@ -24,8 +24,8 @@ const AboutPicture = () => {
     borderRadius: '50%',
 
     //Make it smaller!
-    width:'25%',
-    height:'25%'
+    width:'25vh',
+    height:'25vh'
   }
   return <img src={myPicture} style={aboutPictureStyling}/>
 }
@@ -33,10 +33,11 @@ const AboutPicture = () => {
 const AboutName = () => {
   const aboutNameStyling = {
     textAlign: 'center',
-    fontSize: '90px', 
+    fontSize: '7vmin',
+    whiteSpace:'nowrap',
     fontFamily: 'Arial',
     fontWeight: 'bold',
-    paddingBottom:'40px'
+    paddingBottom:'2.25vmin'
   }
   return <div style={aboutNameStyling}>Joey Albano</div>
 }
@@ -46,7 +47,9 @@ const AboutIcons = () => {
   const aboutIconContainerStyling = {
     textAlign: 'center',
     "& > *": {
-      'margin': '10px'
+      'margin': '1.5vmin',
+      'width': '2vmax',
+      height: '2vmax',
     }
   }
   return (
@@ -61,13 +64,17 @@ const AboutIcons = () => {
 }
 
 const AboutBio = () => {
+  const bioContainerStyling = {
+    margin:'0 auto',
+    width:'100%'
+  }
+
   const aboutBioStyling = {
     fontSize: '25px',
-    padding: '10px',
     fontFamily: 'Arial'
   }
   return (
-    <div>
+    <div style={bioContainerStyling}>
       <p style={aboutBioStyling}>
       I'm currently a Data Analyst & Mathematics Instructor for 
       <a href="https://afficienta.com"> Afficient Academy</a>, an edutech startup
@@ -90,15 +97,19 @@ class About extends React.Component {
   }
 
   componentDidMount() {
-    console.log(this.calendarRef);
-    GitHubCalendar(this.calendarRef, 'jalbatross', {global_stats: false});
+    GitHubCalendar(this.calendarRef, 'jalbatross', {global_stats: false, responsive: true});
   }
 
   renderGithubContributions = () => {
     const githubCalendarStyling = {
       textAlign: 'center',
+      width: '100%',
+      height:'100%',
       "& .contrib-legend": {
         display: 'none'
+      },
+      "& > * svg": {
+        width:'100%',
       }
       
     }

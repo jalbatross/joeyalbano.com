@@ -6,6 +6,7 @@ import { css } from 'emotion';
 const HeaderLink = (props) => {
   const headerTextStyle = {
       color: 'black',
+      fontSize: '2.5vh',
       textDecoration: 'none',
       padding: '5px',
       '&:hover': {
